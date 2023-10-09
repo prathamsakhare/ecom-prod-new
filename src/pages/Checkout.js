@@ -6,9 +6,12 @@ import {
   updateCartAsync,
 } from "../features/cart/cartSlice";
 import { useForm } from "react-hook-form";
-import { selectLoggedInUser, updateUserAsync } from "../features/auth/authSlice";
+import {
+  selectLoggedInUser,
+  updateUserAsync,
+} from "../features/auth/authSlice";
 import { useState } from "react";
-import { createOrderAsync } from "../features/order/orderSlice";
+import { createOrderAsync, selectCurrentOrder} from "../features/order/orderSlice";
 // const products = [
 //   {
 //     id: 1,
@@ -59,9 +62,9 @@ function Checkout() {
   const dispatch = useDispatch();
   const items = useSelector(selectItems);
   const user = useSelector(selectLoggedInUser);
-
-  const [selectedAddress, setSelectedAddress] = useState(null)
-  const [paymentMethod, setPaymentMethod] = useState(null)
+  const currentOrder = useSelector(selectCurrentOrder)
+  const [selectedAddress, setSelectedAddress] = useState(null);
+  const [paymentMethod, setPaymentMethod] = useState(null);
 
   const totalAmount = items.reduce(
     (amount, item) => item.price * item.quantity + amount,
@@ -78,20 +81,32 @@ function Checkout() {
   };
 
   const handleAddress = (e) => {
-    console.log(e.target.value)
+    console.log(e.target.value);
     setSelectedAddress(user.addresses[e.target.value]);
-
-  }
+  };
   const handlePayment = (e) => {
-    setPaymentMethod(e.target.value)
-  }
+    setPaymentMethod(e.target.value);
+  };
   const handleOrder = (e) => {
-    const order = {items, totalAmount, totalItems, user, paymentMethod, selectedAddress}
-    dispatch(createOrderAsync(order))
-    //TODO : redirect to order page
+    if (selectedAddress && paymentMethod) {
+      const order = {
+        items,
+        totalAmount,
+        totalItems,
+        user,
+        paymentMethod,
+        selectedAddress,
+        status: "pending", //other status can be : delivered, received
+      };
+      dispatch(createOrderAsync(order));
+      //TODO : redirect to order page
+    }else{
+      // TODO : We can use proper popup message here
+      alert("Please select address and payment method")
+    }
     //TODO : clear cart after order
     //TODO : on server change the stock number of items
-  }
+  };
 
   const {
     register,
@@ -102,15 +117,26 @@ function Checkout() {
   return (
     <>
       {!items.length && <Navigate to={"/"} replace={true}></Navigate>}
+      {currentOrder && <Navigate to={`/order-success/${currentOrder.id}`} replace={true}></Navigate>}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
           <div className="lg:col-span-3">
-            <form className="bg-white px-5 py-12 mt-12" noValidate onSubmit={handleSubmit((data) => {
-              console.log(data);
-              console.log('user : ', user)
-              dispatch(updateUserAsync({...user, addresses : [...user.addresses, data]}))
-              reset()
-            })}>
+            <form
+              className="bg-white px-5 py-12 mt-12"
+              noValidate
+              onSubmit={handleSubmit((data) => {
+                console.log(data);
+                console.log("user : ", user);
+                dispatch(
+                  updateUserAsync({
+                    ...user,
+                    addresses: [...user?.addresses, data],
+                    // addresses: [...user?.addresses, data] ?? [],
+                  })
+                );
+                reset();
+              })}
+            >
               <div className="space-y-12">
                 <div className="border-b border-gray-900/10 pb-12">
                   <h2 className="text-2xl font-semibold leading-7 text-gray-900">
@@ -187,7 +213,7 @@ function Checkout() {
                         Phone
                       </label>
                       <div className="mt-2">
-                      <input
+                        <input
                           id="phone"
                           {...register("phone", {
                             required: "Phone number is required!",
@@ -354,8 +380,8 @@ function Checkout() {
                           <input
                             id="cash"
                             onChange={handlePayment}
-                            value={'cash'}
-                            checked = {paymentMethod === 'cash'}
+                            value={"cash"}
+                            checked={paymentMethod === "cash"}
                             name="payments"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
@@ -371,8 +397,8 @@ function Checkout() {
                           <input
                             id="card"
                             onChange={handlePayment}
-                            value={'card'}
-                            checked = {paymentMethod === 'card'}
+                            value={"card"}
+                            checked={paymentMethod === "card"}
                             name="payments"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
@@ -563,7 +589,7 @@ function Checkout() {
                 </p>
                 <div className="mt-6">
                   <div
-                  onClick={handleOrder}
+                    onClick={handleOrder}
                     className="flex cursor-pointer items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                   >
                     Order Now
