@@ -1,13 +1,11 @@
-import React, { useState, Fragment } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useState, Fragment } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import {
   deleteItemFromCartAsync,
   selectItems,
   updateCartAsync,
-} from './cartSlice';
-import { Dialog, Transition } from '@headlessui/react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
-import { Link, Navigate } from 'react-router-dom';
+} from "./cartSlice";
+import { Link, Navigate } from "react-router-dom";
 
 export default function Cart() {
   const dispatch = useDispatch();
@@ -24,13 +22,13 @@ export default function Cart() {
     dispatch(updateCartAsync({ ...item, quantity: +e.target.value }));
   };
 
-  const handleRemove =(e, id)=>{
-    dispatch(deleteItemFromCartAsync(id))
-  }
+  const handleRemove = (e, id) => {
+    dispatch(deleteItemFromCartAsync(id));
+  };
 
   return (
     <>
-    {!items.length && <Navigate to={'/'} replace={true}></Navigate>}
+      {!items.length && <Navigate to={"/"} replace={true}></Navigate>}
       <div>
         <div className="mx-auto mt-12 bg-white max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
@@ -69,7 +67,10 @@ export default function Cart() {
                           >
                             Qty
                           </label>
-                          <select onChange={(e) => handleQuantity(e, item)} value={item.quantity}>
+                          <select
+                            onChange={(e) => handleQuantity(e, item)}
+                            value={item.quantity}
+                          >
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -80,7 +81,7 @@ export default function Cart() {
 
                         <div className="flex">
                           <button
-                            onClick={e=>handleRemove(e,item.id)}
+                            onClick={(e) => handleRemove(e, item.id)}
                             type="button"
                             className="font-medium text-indigo-600 hover:text-indigo-500"
                           >

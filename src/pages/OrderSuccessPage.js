@@ -7,6 +7,7 @@ import { selectLoggedInUser } from "../features/auth/authSlice";
 
 function OrderSuccessPage({ order }) {
   const params = useParams();
+  console.log(params)
   const dispatch = useDispatch();
   const user = useSelector(selectLoggedInUser)
   useEffect(() => {
