@@ -1,4 +1,3 @@
-import { Counter } from './features/counter/Counter';
 import './App.css';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
@@ -10,7 +9,6 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import Cart from './features/cart/Cart';
 import CartPage from './pages/CartPage';
 import Checkout from './pages/Checkout';
 import ProductDetailPage from './pages/ProductDetailPage';
@@ -21,8 +19,10 @@ import { selectLoggedInUser } from './features/auth/authSlice';
 import { fetchItemsByUserIdAsync } from './features/cart/cartSlice';
 import Page404 from './pages/Page404';
 import OrderSuccessPage from './pages/OrderSuccessPage';
-import UserOrders from './features/user/components/UserOrders';
 import UserOrdersPage from './pages/UserOrdersPage';
+import UserProfilePage from './pages/UserProfilePage';
+import { fetchLoggedInUserAsync, selectUserInfo } from './features/user/userSlice';
+import Logout from './features/auth/components/Logout';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -76,9 +76,23 @@ const router = createBrowserRouter([
     path: '/orders/',
     element: (
       <Protected>
-        {/* We will add page later */}
         <UserOrdersPage></UserOrdersPage>
       </Protected>
+    ),
+  },
+  {
+    path: '/profile',
+    element: (
+      <Protected>
+        {/* We will add page later */}
+        <UserProfilePage></UserProfilePage>
+      </Protected>
+    ),
+  },
+  {
+    path: '/logout',
+    element: (
+        <Logout></Logout>
     ),
   },
   {
@@ -97,6 +111,7 @@ function App() {
   useEffect(()=>{
     if(user){
       dispatch(fetchItemsByUserIdAsync(user.id))
+      dispatch(fetchLoggedInUserAsync(user.id))
     }
   },[dispatch, user])
 

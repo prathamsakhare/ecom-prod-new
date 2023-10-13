@@ -2340,144 +2340,34 @@
       "password": "Qwerty123",
       "id": 1,
       "addresses": [
-        [
-          [
-            [
-              [
-                [
-                  null,
-                  {
-                    "name": "Prathamesh",
-                    "email": "prathamsakhare@gmail.com",
-                    "phone": "prathamsakhare@gmail.com",
-                    "street": "Killemachindragad",
-                    "city": "Ishwarpur",
-                    "state": "Maharashtra",
-                    "pinCode": "415302"
-                  }
-                ],
-                {
-                  "name": "Prathamesh",
-                  "email": "prathamsakhare@gmail.com",
-                  "phone": "prathamsakhare@gmail.com",
-                  "street": "Killemachindragad",
-                  "city": "Ishwarpur",
-                  "state": "Maharashtra",
-                  "pinCode": "415302"
-                }
-              ],
-              {
-                "name": "Prathamesh",
-                "email": "prathamsakhare@gmail.com",
-                "phone": "prathamsakhare@gmail.com",
-                "street": "Killemachindragad",
-                "city": "Ishwarpur",
-                "state": "Maharashtra",
-                "pinCode": "415302"
-              }
-            ],
-            {
-              "name": "Prathamesh",
-              "email": "prathamsakhare@gmail.com",
-              "phone": "prathamsakhare@gmail.com",
-              "street": "Rethare BK",
-              "city": "Ishwarpur",
-              "state": "Maharashtra",
-              "pinCode": "415302"
-            }
-          ],
-          {
-            "name": "Tilottama S. Somade",
-            "email": "tilottamasomade@gmail.com",
-            "phone": "8806352228",
-            "street": "Rethare Bk, Tal. Karad, Dist. Satara",
-            "city": "Karad",
-            "state": "Maharashtra",
-            "pinCode": "415302"
-          }
-        ],
         {
           "name": "Tilottama S. Somade",
-          "email": "tilottamasomade@gmail.com",
+          "email": "tiluprathamesh@gmail.com",
           "phone": "8806352228",
-          "street": "Rethare Bk, Tal. Karad, Dist. Satara",
-          "city": "Karad",
-          "state": "Maharashtra",
-          "pinCode": "415302"
-        },
-        {
-          "name": "Prathamesh",
-          "email": "prathamsakhare@gmail.com",
-          "phone": "prathamsakhare@gmail.com",
           "street": "Killemachindragad",
           "city": "Ishwarpur",
           "state": "Maharashtra",
           "pinCode": "415302"
         },
         {
-          "name": "Prathamesh",
-          "email": "prathamsakhare@gmail.com",
-          "phone": "prathamsakhare@gmail.com",
-          "street": "Killemachindragad",
-          "city": "Ishwarpur",
-          "state": "Maharashtra",
-          "pinCode": "415302"
-        },
-        {
-          "name": "jnacjkdsnc",
-          "email": "cmssvklnsklv",
-          "phone": "4534543",
-          "street": "mdoka;dk;",
-          "city": "dksalmdasmd",
-          "state": "dnskladnlk",
-          "pinCode": "4465"
-        },
-        {
-          "name": "Prashant Kanase",
-          "email": "prashant@gmail.com",
-          "phone": "123456479",
-          "street": "Shenoli",
-          "city": "Ishwarpur",
-          "state": "Maharashtra",
-          "pinCode": "415302"
-        },
-        {
-          "name": "Prathamesh",
-          "email": "prathameshsakhare192@gmail.com",
-          "phone": "prathameshsakhare192@gmail.com",
-          "street": "Killemachindragad",
-          "city": "Ishwarpur",
-          "state": "Maharashtra",
-          "pinCode": "415302"
-        },
-        {
-          "name": " mdvklsnklv",
-          "email": "vkfsnvlknfskvnl",
-          "phone": "89683688",
-          "street": "vkmflsmvklfsmv",
-          "city": "mvklsfmvkvm",
-          "state": "slfvmk",
-          "pinCode": "52"
-        },
-        {
-          "name": "vmsf vkvfv",
-          "email": "kmlvmfkmvlfdm",
-          "phone": "377257",
-          "street": "kvdfvlkdfvv",
-          "city": "kdfvkdvlvkdlf",
-          "state": "vkldfvlk",
-          "pinCode": "72525272"
-        },
-        {
-          "name": "Prathamesh P.",
-          "email": "dummyemail@gmail.com",
-          "phone": "dummyemail@gmail.com",
+          "name": "Prathamesh P. Sakhare",
+          "email": "tiluprathamesh@gmail.com",
+          "phone": "9356524183",
           "street": "Killemachindragad",
           "city": "Ishwarpur",
           "state": "Maharashtra",
           "pinCode": "415302"
         }
-      ]
+      ],
+      "address": {
+        "name": "Prashant Kanase",
+        "email": "prashant@gmail.com",
+        "phone": "1234567890",
+        "street": "Shenoli",
+        "city": "Karad",
+        "state": "Maharashtra",
+        "pinCode": "415302"
+      }
     },
     {
       "email": "demo@gmail.com",
@@ -2633,6 +2523,26 @@
       ],
       "quantity": 1,
       "id": 12
+    },
+    {
+      "title": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/2.jpg",
+        "https://i.dummyjson.com/data/products/2/3.jpg",
+        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      ],
+      "quantity": 1,
+      "user": 3,
+      "id": 13
     }
   ],
   "orders": [
@@ -4137,7 +4047,7 @@
         "state": "Maharashtra",
         "pinCode": "415302"
       },
-      "status": "pending",
+      "status": "odu",
       "id": 13
     },
     {
@@ -4723,6 +4633,440 @@
       },
       "status": "pending",
       "id": 19
+    },
+    {
+      "items": [
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 13
+        }
+      ],
+      "totalAmount": 1249,
+      "totalItems": 1,
+      "user": {
+        "email": "test@gmail.com",
+        "password": "Qwerty123",
+        "id": 1,
+        "addresses": [
+          [
+            [
+              [
+                [
+                  [
+                    null,
+                    {
+                      "name": "Prathamesh",
+                      "email": "prathamsakhare@gmail.com",
+                      "phone": "prathamsakhare@gmail.com",
+                      "street": "Killemachindragad",
+                      "city": "Ishwarpur",
+                      "state": "Maharashtra",
+                      "pinCode": "415302"
+                    }
+                  ],
+                  {
+                    "name": "Prathamesh",
+                    "email": "prathamsakhare@gmail.com",
+                    "phone": "prathamsakhare@gmail.com",
+                    "street": "Killemachindragad",
+                    "city": "Ishwarpur",
+                    "state": "Maharashtra",
+                    "pinCode": "415302"
+                  }
+                ],
+                {
+                  "name": "Prathamesh",
+                  "email": "prathamsakhare@gmail.com",
+                  "phone": "prathamsakhare@gmail.com",
+                  "street": "Killemachindragad",
+                  "city": "Ishwarpur",
+                  "state": "Maharashtra",
+                  "pinCode": "415302"
+                }
+              ],
+              {
+                "name": "Prathamesh",
+                "email": "prathamsakhare@gmail.com",
+                "phone": "prathamsakhare@gmail.com",
+                "street": "Rethare BK",
+                "city": "Ishwarpur",
+                "state": "Maharashtra",
+                "pinCode": "415302"
+              }
+            ],
+            {
+              "name": "Tilottama S. Somade",
+              "email": "tilottamasomade@gmail.com",
+              "phone": "8806352228",
+              "street": "Rethare Bk, Tal. Karad, Dist. Satara",
+              "city": "Karad",
+              "state": "Maharashtra",
+              "pinCode": "415302"
+            }
+          ],
+          {
+            "name": "Tilottama S. Somade",
+            "email": "tilottamasomade@gmail.com",
+            "phone": "8806352228",
+            "street": "Rethare Bk, Tal. Karad, Dist. Satara",
+            "city": "Karad",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": "Prathamesh",
+            "email": "prathamsakhare@gmail.com",
+            "phone": "prathamsakhare@gmail.com",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": "Prathamesh",
+            "email": "prathamsakhare@gmail.com",
+            "phone": "prathamsakhare@gmail.com",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": "jnacjkdsnc",
+            "email": "cmssvklnsklv",
+            "phone": "4534543",
+            "street": "mdoka;dk;",
+            "city": "dksalmdasmd",
+            "state": "dnskladnlk",
+            "pinCode": "4465"
+          },
+          {
+            "name": "Prashant Kanase",
+            "email": "prashant@gmail.com",
+            "phone": "123456479",
+            "street": "Shenoli",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": "Prathamesh",
+            "email": "prathameshsakhare192@gmail.com",
+            "phone": "prathameshsakhare192@gmail.com",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": " mdvklsnklv",
+            "email": "vkfsnvlknfskvnl",
+            "phone": "89683688",
+            "street": "vkmflsmvklfsmv",
+            "city": "mvklsfmvkvm",
+            "state": "slfvmk",
+            "pinCode": "52"
+          },
+          {
+            "name": "vmsf vkvfv",
+            "email": "kmlvmfkmvlfdm",
+            "phone": "377257",
+            "street": "kvdfvlkdfvv",
+            "city": "kdfvkdvlvkdlf",
+            "state": "vkldfvlk",
+            "pinCode": "72525272"
+          },
+          {
+            "name": "Prathamesh P.",
+            "email": "dummyemail@gmail.com",
+            "phone": "dummyemail@gmail.com",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Prathamesh",
+        "email": "prathamsakhare@gmail.com",
+        "phone": "prathamsakhare@gmail.com",
+        "street": "Killemachindragad",
+        "city": "Ishwarpur",
+        "state": "Maharashtra",
+        "pinCode": "415302"
+      },
+      "status": "pending",
+      "id": 20
+    },
+    {
+      "items": [
+        {
+          "title": "Loafers for men",
+          "description": "Men Shoes - Loafers for men - Rubber Shoes - Nylon Shoes - Shoes for men - Moccassion - Pure Nylon (Rubber) Expot Quality.",
+          "price": 47,
+          "discountPercentage": 10.91,
+          "rating": 4.91,
+          "stock": 20,
+          "brand": "Rubber",
+          "category": "mens-shoes",
+          "thumbnail": "https://i.dummyjson.com/data/products/57/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/57/1.jpg",
+            "https://i.dummyjson.com/data/products/57/2.jpg",
+            "https://i.dummyjson.com/data/products/57/3.jpg",
+            "https://i.dummyjson.com/data/products/57/4.jpg",
+            "https://i.dummyjson.com/data/products/57/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 14
+        }
+      ],
+      "totalAmount": 47,
+      "totalItems": 1,
+      "user": {
+        "email": "test@gmail.com",
+        "password": "Qwerty123",
+        "id": 1,
+        "addresses": [
+          [
+            [
+              [
+                [
+                  [
+                    null,
+                    {
+                      "name": "Prathamesh",
+                      "email": "prathamsakhare@gmail.com",
+                      "phone": "prathamsakhare@gmail.com",
+                      "street": "Killemachindragad",
+                      "city": "Ishwarpur",
+                      "state": "Maharashtra",
+                      "pinCode": "415302"
+                    }
+                  ],
+                  {
+                    "name": "Prathamesh",
+                    "email": "prathamsakhare@gmail.com",
+                    "phone": "prathamsakhare@gmail.com",
+                    "street": "Killemachindragad",
+                    "city": "Ishwarpur",
+                    "state": "Maharashtra",
+                    "pinCode": "415302"
+                  }
+                ],
+                {
+                  "name": "Prathamesh",
+                  "email": "prathamsakhare@gmail.com",
+                  "phone": "prathamsakhare@gmail.com",
+                  "street": "Killemachindragad",
+                  "city": "Ishwarpur",
+                  "state": "Maharashtra",
+                  "pinCode": "415302"
+                }
+              ],
+              {
+                "name": "Prathamesh",
+                "email": "prathamsakhare@gmail.com",
+                "phone": "prathamsakhare@gmail.com",
+                "street": "Rethare BK",
+                "city": "Ishwarpur",
+                "state": "Maharashtra",
+                "pinCode": "415302"
+              }
+            ],
+            {
+              "name": "Tilottama S. Somade",
+              "email": "tilottamasomade@gmail.com",
+              "phone": "8806352228",
+              "street": "Rethare Bk, Tal. Karad, Dist. Satara",
+              "city": "Karad",
+              "state": "Maharashtra",
+              "pinCode": "415302"
+            }
+          ],
+          {
+            "name": "Tilottama S. Somade",
+            "email": "tilottamasomade@gmail.com",
+            "phone": "8806352228",
+            "street": "Rethare Bk, Tal. Karad, Dist. Satara",
+            "city": "Karad",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": "Prathamesh",
+            "email": "prathamsakhare@gmail.com",
+            "phone": "prathamsakhare@gmail.com",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": "Prathamesh",
+            "email": "prathamsakhare@gmail.com",
+            "phone": "prathamsakhare@gmail.com",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": "jnacjkdsnc",
+            "email": "cmssvklnsklv",
+            "phone": "4534543",
+            "street": "mdoka;dk;",
+            "city": "dksalmdasmd",
+            "state": "dnskladnlk",
+            "pinCode": "4465"
+          },
+          {
+            "name": "Prashant Kanase",
+            "email": "prashant@gmail.com",
+            "phone": "123456479",
+            "street": "Shenoli",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": "Prathamesh",
+            "email": "prathameshsakhare192@gmail.com",
+            "phone": "prathameshsakhare192@gmail.com",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": " mdvklsnklv",
+            "email": "vkfsnvlknfskvnl",
+            "phone": "89683688",
+            "street": "vkmflsmvklfsmv",
+            "city": "mvklsfmvkvm",
+            "state": "slfvmk",
+            "pinCode": "52"
+          },
+          {
+            "name": "vmsf vkvfv",
+            "email": "kmlvmfkmvlfdm",
+            "phone": "377257",
+            "street": "kvdfvlkdfvv",
+            "city": "kdfvkdvlvkdlf",
+            "state": "vkldfvlk",
+            "pinCode": "72525272"
+          },
+          {
+            "name": "Prathamesh P.",
+            "email": "dummyemail@gmail.com",
+            "phone": "dummyemail@gmail.com",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Prathamesh",
+        "email": "prathamsakhare@gmail.com",
+        "phone": "prathamsakhare@gmail.com",
+        "street": "Killemachindragad",
+        "city": "Ishwarpur",
+        "state": "Maharashtra",
+        "pinCode": "415302"
+      },
+      "status": "pending",
+      "id": 21
+    },
+    {
+      "items": [
+        {
+          "title": "MacBook Pro",
+          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+          "price": 1749,
+          "discountPercentage": 11.02,
+          "rating": 4.57,
+          "stock": 83,
+          "brand": "Apple",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+          "images": [
+            "https://i.dummyjson.com/data/products/6/1.png",
+            "https://i.dummyjson.com/data/products/6/2.jpg",
+            "https://i.dummyjson.com/data/products/6/3.png",
+            "https://i.dummyjson.com/data/products/6/4.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 14
+        }
+      ],
+      "totalAmount": 1749,
+      "totalItems": 1,
+      "user": {
+        "email": "test@gmail.com",
+        "password": "Qwerty123",
+        "id": 1,
+        "addresses": [
+          {
+            "name": "Tilottama S. Somade",
+            "email": "tiluprathamesh@gmail.com",
+            "phone": "8806352228",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          },
+          {
+            "name": "Prathamesh",
+            "email": "tiluprathamesh@gmail.com",
+            "phone": "9356524183",
+            "street": "Killemachindragad",
+            "city": "Ishwarpur",
+            "state": "Maharashtra",
+            "pinCode": "415302"
+          }
+        ],
+        "address": {
+          "name": "Prashant Kanase",
+          "email": "prashant@gmail.com",
+          "phone": "1234567890",
+          "street": "Shenoli",
+          "city": "Karad",
+          "state": "Maharashtra",
+          "pinCode": "415302"
+        }
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Prathamesh",
+        "email": "tiluprathamesh@gmail.com",
+        "phone": "9356524183",
+        "street": "Killemachindragad",
+        "city": "Ishwarpur",
+        "state": "Maharashtra",
+        "pinCode": "415302"
+      },
+      "status": "pending",
+      "id": 22
     }
   ]
 }

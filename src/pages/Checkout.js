@@ -7,11 +7,11 @@ import {
 } from "../features/cart/cartSlice";
 import { useForm } from "react-hook-form";
 import {
-  selectLoggedInUser,
   updateUserAsync,
 } from "../features/auth/authSlice";
 import { useState } from "react";
 import { createOrderAsync, selectCurrentOrder} from "../features/order/orderSlice";
+import { selectUserInfo } from "../features/user/userSlice";
 // const products = [
 //   {
 //     id: 1,
@@ -60,8 +60,8 @@ import { createOrderAsync, selectCurrentOrder} from "../features/order/orderSlic
 // ];
 function Checkout() {
   const dispatch = useDispatch();
-  const items = useSelector(selectItems);
-  const user = useSelector(selectLoggedInUser);
+const items = useSelector(selectItems);
+  const user = useSelector(selectUserInfo);
   const currentOrder = useSelector(selectCurrentOrder)
   const [selectedAddress, setSelectedAddress] = useState(null);
   const [paymentMethod, setPaymentMethod] = useState(null);
@@ -76,13 +76,14 @@ function Checkout() {
     dispatch(updateCartAsync({ ...item, quantity: +e.target.value }));
   };
 
+  console.log(user?.addresses)
   const handleRemove = (e, id) => {
     dispatch(deleteItemFromCartAsync(id));
   };
 
   const handleAddress = (e) => {
     console.log(e.target.value);
-    setSelectedAddress(user.addresses[e.target.value]);
+    setSelectedAddress(user?.addresses[e.target.value]);
   };
   const handlePayment = (e) => {
     setPaymentMethod(e.target.value);
@@ -330,7 +331,7 @@ function Checkout() {
                     Choose from Existing addresses
                   </p>
                   <ul role="list">
-                    {user.addresses?.map((address, index) => (
+                    {user?.addresses?.map((address, index) => (
                       <li
                         key={index}
                         className="flex justify-between gap-x-6 px-5 py-5 border-solid border-2 border-gray-200"
