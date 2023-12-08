@@ -1,13 +1,13 @@
 import NavBar from "../features/navbar/Navbar";
-import ProductDetail from "../features/product/components/ProductDetail";
-function ProductDetailPage() {
+import AdminProductDetail from "../features/admin/components/AdminProductDetail";
+function AdminProductDetailPage() {
     return ( 
         <div>
             <NavBar>
-                <ProductDetail></ProductDetail>
+                <AdminProductDetail></AdminProductDetail>
             </NavBar>
         </div>
      );
 }
 
-export default ProductDetailPage;
+export default AdminProductDetailPage;

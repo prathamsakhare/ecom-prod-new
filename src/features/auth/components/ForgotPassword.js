@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, incrementAsync, selectError, selectLoggedInUser } from '../authSlice';
 import { Link, Navigate } from 'react-router-dom';
 import { checkUserAsync } from '../authSlice';
 import { useForm } from 'react-hook-form';
-import { selectUserInfo } from '../../user/userSlice';
 
-export default function Login() {
-  const dispatch = useDispatch();
-  const error = useSelector(selectError)
-  const user = useSelector(selectLoggedInUser)
+export default function ForgotPassword() {
   const {
     register,
     handleSubmit,
@@ -20,7 +15,6 @@ export default function Login() {
 
   return (
     <>
-      {user && <Navigate to='/' replace={true}></Navigate>}
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -29,7 +23,7 @@ export default function Login() {
             alt="Your Company"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Log in to your account
+            Reset Password
           </h2>
         </div>
 
@@ -37,9 +31,8 @@ export default function Login() {
           <form
             noValidate
             onSubmit={handleSubmit((data) => {
-              dispatch(
-                checkUserAsync({ email: data.email, password: data.password })
-              );
+              console.log(data)
+              // TODO : backend implementation of the reset password functionality
             })}
             className="space-y-6"
             action="#"
@@ -71,7 +64,7 @@ export default function Login() {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <div className="flex items-center justify-between">
                 <label
                   htmlFor="password"
@@ -80,12 +73,12 @@ export default function Login() {
                   Password
                 </label>
                 <div className="text-sm">
-                  <Link
-                    to={'/forgot-password'}
+                  <a
+                    href="#"
                     className="font-semibold text-indigo-600 hover:text-indigo-500"
                   >
                     Forgot password?
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="mt-2">
@@ -104,25 +97,25 @@ export default function Login() {
               {error && (
                   <p className="text-red-500">{error.message}</p>
                 )}
-            </div>
+            </div> */}
 
             <div>
               <button
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Log in
+                Send Email
               </button>
             </div>
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Not a member?{' '}
+            Send me back to {' '}
             <Link
-              to="/signup"
+              to="/login"
               className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
             >
-              Create an Account
+              Login
             </Link>
           </p>
         </div>
