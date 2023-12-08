@@ -236,7 +236,7 @@ export default function AdminProductDetail() {
                     className="mt-4"
                   >
                     <RadioGroup.Label className="sr-only">
-                      Choose a size
+                      Choose a size (Just A Change for Pratham branch to test)
                     </RadioGroup.Label>
                     <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
                       {sizes.map((size) => (
